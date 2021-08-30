@@ -7,7 +7,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageOutputPath>bin\release\</PackageOutputPath>
     <Version>1.0.0</Version>
-    <Authors>DebabrataMaji</Authors>
+    <Authors>debabrata-ma</Authors>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
