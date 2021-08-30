@@ -1,0 +1,1 @@
+# sample-class-lib-4.5
