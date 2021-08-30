@@ -46,7 +46,7 @@ jobs:
         run: msbuild NugetTestLibrary/NugetTestLibrary.sln /p:Configuration=Release /p:Platform="Any CPU"
 
       - name: Nuget Add Source
-        run: nuget sources Add -Name "GitHub" -Source https://nuget.pkg.github.com/RaviPrasadOrg/index.json -UserName debabrata-ma -Password ${{ secrets.NUGET_API_KEY }}
+        run: nuget sources Add -Name "GitHub" -Source https://nuget.pkg.github.com/RaviPrasadOrg/index.json -UserName debabrata-ma -Password ${{ secrets.GITHUB_TOKEN }}
       - name: Nuget SetAPIKey
         run: nuget setapikey ${{ secrets.GITHUB_TOKEN }} -Source "GitHub"
       - name: Publish the package to GitHub packages
